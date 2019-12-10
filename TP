@@ -1,0 +1,54 @@
+
+ETEC Professor Horácio Augusto da Silveira
+Avaliação de Design Digital – Segundo Bimestre – Usabilidade e Padrões de Projeto
+
+Nome:Maike de Ávila Morais
+
+
+1-
+//Informando o que acontece quando clicar o botão Banana
+private void btnbanana_Click(object sender, eventArgs e)
+{
+	double banana; 
+	string guarana; 
+	try
+	{
+		banana=Convert.ToDouble(txtbanana.Text);
+		rguarana=Convert.ToString(guarana); 
+		txtResultado.Text = rguarana;
+	} 
+	catch(FormatException)
+	{ 
+		MessageBox.Show("Formatação Errada.");
+	}
+}		
+                                  -----------
+                                  * Objetos *
+2-  -------------                 -----------
+    *  Classe   *                 -----------                 
+    ------------- ------------->   * BANANA *                
+    *  Comida   *                 -----------                  
+    -------------                                 
+    *  +Sabor   *
+    *+Descrição *                 	
+    *  +Preço   *                 ----------- 
+    *+Quantidade* ------------->  * Guaraná *
+    -------------                 -----------	
+    * Incluir() *
+    *Consultar()*
+    * Alterar() *
+    -------------
+
+public class comida
+{
+	private double banana;
+	private double guaraná; 
+		
+	banana=Convert.ToDouble(txtbanana.Text);
+	rguarana=Convert.ToString(guarana); 
+	txtResultado.Text = rguarana;
+}
+
+1.	Organize o código acima segundo o que foi explicado nas aulas de técnicas de programação afim de garantir legibilidade e sustentabilidade do código.
+
+2.	Desenhe uma classe que implemente o código acima como um método. 
