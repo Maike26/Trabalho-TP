@@ -9,14 +9,18 @@ Nome:Maike de Ávila Morais
 //Informando o que acontece quando clicar o botão Banana
 private void btnbanana_Click(object sender, eventArgs e)
 {
+	//Informando as váriaveis banana é double e guarana String
 	double banana; 
-	string guarana; 
+	string guarana;
+	//Tentar 
 	try
 	{
-		banana=Convert.ToDouble(txtbanana.Text);
-		rguarana=Convert.ToString(guarana); 
-		txtResultado.Text = rguarana;
+		//Está convertendo para double o que está escrito na caixa de texto txtbanana	
+		banana=Convert.ToDouble(txtBanana.Text);
+		//Convertendo para string a caixa de texto txtguarana
+		rguarana=Convert.ToString(txtGuarana.text);
 	} 
+	//Caso de erro de formato exibir a mensagem "FORMATAÇÃO ERRADA."
 	catch(FormatException)
 	{ 
 		MessageBox.Show("Formatação Errada.");
